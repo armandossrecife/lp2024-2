@@ -260,3 +260,72 @@ matriz = [[1, 2, 3],
 * **Flexibilidade:** Podem armazenar qualquer tipo de dado.
 * **Facilidade de uso:** Sintaxe intuitiva e diversos métodos.
 * **Versatilidade:** Utilizadas em diversas aplicações, como manipulação de dados, criação de jogos, etc.
+
+## Tuplas em Python
+
+**O que são tuplas?**
+
+Tuplas são estruturas de dados em Python, muito semelhantes às listas, mas com uma diferença crucial: **são imutáveis**. Isso significa que, uma vez criada, uma tupla não pode ser modificada. Seus elementos não podem ser adicionados, removidos ou alterados.
+
+**Por que usar tuplas?**
+
+* **Proteção de dados:** Ao serem imutáveis, as tuplas garantem que os dados não serão alterados acidentalmente, o que pode ser útil em diversas situações, como para armazenar constantes ou como chaves em dicionários.
+* **Eficiência:** As tuplas são geralmente mais eficientes em termos de memória do que as listas, especialmente quando se trata de dados que não precisam ser alterados.
+* **Retornando múltiplos valores de funções:** Funções podem retornar tuplas para retornar múltiplos valores de uma só vez.
+
+**Como criar uma tupla:**
+
+```python
+minha_tupla = (1, 2, 3, "maçã", "banana")
+```
+
+* **Parênteses:** Delimitam os elementos da tupla.
+* **Elementos separados por vírgula:** Cada elemento ocupa uma posição na tupla.
+
+**Acessando elementos:**
+
+Assim como nas listas, você usa índices para acessar elementos de uma tupla.
+
+```python
+primeiro_elemento = minha_tupla[0]  # Acessa o primeiro elemento (1)
+```
+
+**Operações com tuplas:**
+
+* **Concatenando tuplas:** `tupla1 + tupla2`
+* **Repetindo tuplas:** `tupla * 3`
+* **Verificando a existência de um elemento:** `if "maçã" in minha_tupla:`
+* **Obtendo o tamanho da tupla:** `len(minha_tupla)`
+
+**Métodos úteis:**
+
+* **`count(x)`:** Conta quantas vezes `x` aparece na tupla.
+* **`index(x)`:** Retorna o índice da primeira ocorrência de `x`.
+
+**Diferenças entre listas e tuplas:**
+
+| Característica | Listas | Tuplas |
+|---|---|---|
+| Mutabilidade | Mutáveis (podem ser modificadas) | Imutáveis (não podem ser modificadas) |
+| Uso comum | Armazenar coleções de dados que podem mudar | Armazenar dados que não precisam ser alterados, como constantes ou para retornar múltiplos valores de funções |
+| Sintaxe de criação | Colchetes `[]` | Parênteses `()` |
+
+**Exemplo:**
+
+```python
+coordenadas = (3, 5)  # Uma tupla representando coordenadas (x, y)
+nome, idade = ("Alice", 30)  # Desempacotamento de tupla
+
+print(coordenadas)
+print(nome, idade)
+```
+
+**Quando usar tuplas:**
+
+* **Para representar dados imutáveis:** Como coordenadas, datas, cores, etc.
+* **Como chaves em dicionários:** As chaves de um dicionário devem ser imutáveis, e tuplas são uma boa opção.
+* **Para retornar múltiplos valores de funções:** Funções podem retornar tuplas para retornar vários valores de uma só vez.
+
+**Em resumo:**
+
+O uso de Tuplas em Python permite armazenar dados que não precisam ser alterados. Sua imutabilidade as torna seguras e eficientes em muitas situações.
