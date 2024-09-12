@@ -166,3 +166,97 @@ for numero in numeros:
 
 print("A soma dos números pares é:", soma)
 ```
+
+## Listas em Python
+
+**O que são listas em Python?**
+
+Listas são estruturas de dados extremamente versáteis em Python, utilizadas para armazenar coleções de itens. Elas são **mutáveis**, ou seja, você pode adicionar, remover ou modificar elementos após a criação da lista. Os elementos de uma lista podem ser de qualquer tipo de dado, inclusive outras listas, criando estruturas de dados complexas.
+
+**Como criar uma lista:**
+
+```python
+minha_lista = [1, 2, 3, "maçã", "banana", True]
+```
+
+* **Colchetes `[]`:** Delimitam os elementos da lista.
+* **Elementos separados por vírgula:** Cada elemento ocupa uma posição na lista, começando do índice 0.
+
+**Acessando elementos:**
+
+```python
+primeiro_elemento = minha_lista[0]  # Acessa o primeiro elemento (1)
+ultimo_elemento = minha_lista[-1]  # Acessa o último elemento (True)
+```
+
+* **Índices:** Utilizados para acessar elementos específicos. Índices negativos contam a partir do final da lista.
+
+**Modificando elementos:**
+
+```python
+minha_lista[2] = "laranja"  # Substitui o terceiro elemento
+```
+
+**Adicionando elementos:**
+
+```python
+minha_lista.append("uva")  # Adiciona ao final da lista
+minha_lista.insert(1, "pera")  # Insere na posição 1
+```
+
+**Removendo elementos:**
+
+```python
+minha_lista.remove("maçã")  # Remove o primeiro elemento com o valor "maçã"
+del minha_lista[0]  # Remove o elemento na posição 0
+```
+
+**Operações com listas:**
+
+* **Concatenando listas:** `lista1 + lista2`
+* **Repetindo listas:** `lista * 3`
+* **Verificando a existência de um elemento:** `if "maçã" in minha_lista:`
+* **Obtendo o tamanho da lista:** `len(minha_lista)`
+* **Ordenando a lista:** `minha_lista.sort()` (modifica a lista original)
+* **Invertendo a lista:** `minha_lista.reverse()` (modifica a lista original)
+
+**Métodos úteis:**
+
+* `count(x)`: Conta quantas vezes `x` aparece na lista.
+* `index(x)`: Retorna o índice da primeira ocorrência de `x`.
+* `pop(i)`: Remove e retorna o elemento na posição `i`.
+* `clear()`: Remove todos os elementos da lista.
+
+**Exemplo completo:**
+
+```python
+numeros = [1, 3, 5, 7]
+frutas = ["maçã", "banana", "laranja"]
+
+# Concatenando listas
+lista_completa = numeros + frutas
+
+# Adicionando um elemento
+lista_completa.append("uva")
+
+# Removendo um elemento
+lista_completa.remove("maçã")
+
+print(lista_completa)
+```
+
+**Listas aninhadas:**
+
+Listas podem conter outras listas, criando estruturas de dados multidimensionais.
+
+```python
+matriz = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+```
+
+**Por que usar listas?**
+
+* **Flexibilidade:** Podem armazenar qualquer tipo de dado.
+* **Facilidade de uso:** Sintaxe intuitiva e diversos métodos.
+* **Versatilidade:** Utilizadas em diversas aplicações, como manipulação de dados, criação de jogos, etc.
