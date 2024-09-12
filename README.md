@@ -560,3 +560,107 @@ Modificam o comportamento de uma função sem alterar seu código.
 **Em resumo:**
 
 Funções são um dos conceitos mais importantes em Python. Elas permitem organizar o código de forma eficiente e reutilizável. Ao entender como criar e utilizar funções, você estará mais preparado para desenvolver programas mais complexos e bem estruturados.
+
+## Sistema de Arquivos em Python
+
+**O que é o sistema de arquivos em Python?**
+
+O sistema de arquivos em Python oferece um conjunto de ferramentas para interagir com o sistema operacional, permitindo que você crie, leia, escreva, renomeie, exclua e gerencie arquivos e diretórios. Essas funcionalidades são essenciais para qualquer aplicação que precise lidar com dados armazenados em disco.
+
+**Módulos Principais:**
+
+* **`os`:** Fornece funções para interagir com o sistema operacional de forma mais baixa.
+* **`shutil`:** Oferece funções de alto nível para copiar, mover e remover arquivos e diretórios.
+* **`pathlib`:** Uma interface mais moderna e orientada a objetos para trabalhar com caminhos de arquivos.
+
+**Operações Comuns:**
+
+* **Criar arquivos:**
+  ```python
+  with open("meu_arquivo.txt", "w") as arquivo:
+      arquivo.write("Hello, world!")
+  ```
+* **Ler arquivos:**
+  ```python
+  with open("meu_arquivo.txt", "r") as arquivo:
+      conteudo = arquivo.read()
+      print(conteudo)
+  ```
+* **Obter informações sobre arquivos:**
+  ```python
+  import os
+  import time
+
+  arquivo = "meu_arquivo.txt"
+  tamanho = os.path.getsize(arquivo)
+  modificado = time.ctime(os.path.getmtime(arquivo))
+  print(tamanho, modificado)
+  ```
+* **Listar arquivos em um diretório:**
+  ```python
+  import os
+
+  for arquivo in os.listdir("."):
+      print(arquivo)
+  ```
+* **Criar diretórios:**
+  ```python
+  import os
+
+  os.mkdir("nova_pasta")
+  ```
+* **Renomear arquivos:**
+  ```python
+  import os
+
+  os.rename("arquivo_antigo.txt", "novo_arquivo.txt")
+  ```
+* **Excluir arquivos:**
+  ```python
+  import os
+
+  os.remove("arquivo_a_ser_excluido.txt")
+  ```
+* **Copiar arquivos:**
+  ```python
+  import shutil
+
+  shutil.copy("arquivo_original.txt", "copia_do_arquivo.txt")
+  ```
+* **Mover arquivos:**
+  ```python
+  import shutil
+
+  shutil.move("arquivo.txt", "nova_pasta")
+  ```
+
+**Conceitos Importantes:**
+
+* **Caminhos absolutos e relativos:** Caminhos absolutos especificam a localização completa de um arquivo a partir da raiz do sistema de arquivos, enquanto caminhos relativos são especificados em relação ao diretório atual.
+* **Modos de abertura de arquivos:** "r" para leitura, "w" para escrita (sobrescreve), "a" para append (adiciona ao final), "x" para criar um arquivo exclusivo, "b" para modo binário.
+* **Gerenciamento de exceções:** É importante usar `try-except` para lidar com erros que podem ocorrer durante operações com arquivos, como arquivos não encontrados ou permissões insuficientes.
+
+**Módulo `pathlib` (Python 3.4+):**
+
+* **Objetos Path:** Representam caminhos de arquivos de forma mais intuitiva e orientada a objetos.
+* **Operações:** Criar, remover, listar, ler, escrever, etc.
+* **Métodos:** `exists()`, `is_dir()`, `is_file()`, `read_text()`, `write_text()`, etc.
+
+**Exemplo com `pathlib`:**
+
+```python
+from pathlib import Path
+
+caminho = Path("minha_pasta")
+caminho.mkdir(exist_ok=True)  # Cria a pasta se não existir
+
+arquivo = caminho / "meu_arquivo.txt"
+arquivo.touch(exist_ok=True)  # Cria o arquivo se não existir
+
+with arquivo.open("w") as f:
+    f.write("Conteúdo do arquivo")
+```
+
+**Em resumo:**
+
+O sistema de arquivos em Python oferece uma interface poderosa para interagir com o sistema operacional e gerenciar arquivos e diretórios. Ao dominar esses conceitos, você poderá criar aplicações que leem e escrevem dados em disco, automatizam tarefas e muito mais.
