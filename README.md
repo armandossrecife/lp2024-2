@@ -329,3 +329,74 @@ print(nome, idade)
 **Em resumo:**
 
 O uso de Tuplas em Python permite armazenar dados que não precisam ser alterados. Sua imutabilidade as torna seguras e eficientes em muitas situações.
+
+## Conjuntos (Sets) em Python
+
+**O que são conjuntos em Python?**
+
+Conjuntos em Python são estruturas de dados que armazenam coleções de elementos **únicos e não ordenados**. Isso significa que um conjunto não pode conter elementos duplicados e a ordem dos elementos não é garantida. Os conjuntos são muito úteis para realizar operações matemáticas de conjuntos, como união, interseção e diferença.
+
+**Como criar um conjunto:**
+
+```python
+meu_conjunto = {1, 2, 3, "maçã", "banana"}
+```
+
+* **Chaves `{}`:** Delimitam os elementos do conjunto.
+* **Elementos separados por vírgula:** Cada elemento é único.
+
+**Operações com conjuntos:**
+
+* **Adicionar elementos:** `meu_conjunto.add("laranja")`
+* **Remover elementos:** `meu_conjunto.remove("maçã")`
+* **Verificar se um elemento está no conjunto:** `if "banana" in meu_conjunto:`
+* **União de conjuntos:** `conjunto1.union(conjunto2)`
+* **Interseção de conjuntos:** `conjunto1.intersection(conjunto2)`
+* **Diferença de conjuntos:** `conjunto1.difference(conjunto2)`
+* **Diferença simétrica:** `conjunto1.symmetric_difference(conjunto2)`
+
+**Métodos úteis:**
+
+* **`clear()`:** Remove todos os elementos do conjunto.
+* **`copy()`:** Cria uma cópia do conjunto.
+* **`pop()`:** Remove e retorna um elemento aleatório.
+
+**Exemplo:**
+
+```python
+conjunto_a = {1, 2, 3, 4}
+conjunto_b = {3, 4, 5, 6}
+
+# União
+uniao = conjunto_a.union(conjunto_b)  # {1, 2, 3, 4, 5, 6}
+
+# Interseção
+intersecao = conjunto_a.intersection(conjunto_b)  # {3, 4}
+
+# Diferença
+diferenca = conjunto_a.difference(conjunto_b)  # {1, 2}
+
+print(uniao)
+print(intersecao)
+print(diferenca)
+```
+
+**Quando usar conjuntos:**
+
+* **Remover duplicatas:** Conjuntos são perfeitos para eliminar elementos duplicados de uma lista.
+* **Verificar se um elemento pertence a um conjunto:** Operações de pertinência são muito eficientes em conjuntos.
+* **Realizar operações matemáticas de conjuntos:** União, interseção, diferença são operações comuns em conjuntos.
+* **Implementar algoritmos:** Conjuntos são úteis em diversos algoritmos, como algoritmos de grafos e algoritmos de busca.
+
+**Diferenças entre conjuntos e listas:**
+
+| Característica | Conjuntos (sets) | Listas |
+|---|---|---|
+| Ordem dos elementos | Não ordenados | Ordenados |
+| Elementos duplicados | Não permite | Permite |
+| Mutabilidade | Mutáveis (podem ser modificados) | Mutáveis |
+| Uso comum | Remover duplicatas, operações matemáticas de conjuntos | Armazenar sequências de elementos |
+
+**Em resumo:**
+
+Conjuntos são uma ferramenta poderosa em Python para trabalhar com coleções de elementos únicos. Sua simplicidade e eficiência os tornam ideais para diversas tarefas, desde a remoção de duplicatas até a implementação de algoritmos complexos.
