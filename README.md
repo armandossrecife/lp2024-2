@@ -483,12 +483,3 @@ for chave, valor in usuario.items():
 
 Dicionários são uma ferramenta poderosa em Python para armazenar e organizar dados. Sua flexibilidade e facilidade de uso os tornam uma estrutura de dados fundamental em muitas aplicações.
 
-**Gostaria de explorar algum outro aspecto dos dicionários em Python?** Por exemplo, podemos aprofundar em:
-
-* **Compreensão de dicionários:** Uma forma concisa de criar dicionários.
-* **Aninhamento de dicionários:** Criando dicionários dentro de dicionários.
-* **Métodos avançados:** `popitem`, `update`, etc.
-* **Aplicações de dicionários:** Exemplos práticos de uso de dicionários.
-
-**Qual tópico te interessa mais?**
-
