@@ -400,3 +400,95 @@ print(diferenca)
 **Em resumo:**
 
 Conjuntos são uma ferramenta poderosa em Python para trabalhar com coleções de elementos únicos. Sua simplicidade e eficiência os tornam ideais para diversas tarefas, desde a remoção de duplicatas até a implementação de algoritmos complexos.
+
+## Dicionários em Python
+
+**O que são dicionários em Python?**
+
+Dicionários são estruturas de dados que armazenam pares chave-valor. Cada chave é única e é usada para acessar o valor correspondente. Dicionários são mutáveis, ou seja, você pode adicionar, remover ou modificar pares chave-valor após a criação do dicionário.
+
+**Como criar um dicionario:**
+
+```python
+meu_dicionario = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
+```
+
+* **Chaves `{}`:** Delimitam os pares chave-valor.
+* **Chaves e valores separados por dois pontos:** A chave é um objeto imutável (como uma string, um número ou uma tupla) e o valor pode ser de qualquer tipo de dado.
+
+**Acessando valores:**
+
+```python
+nome = meu_dicionario["nome"]  # Acessa o valor da chave "nome"
+```
+
+**Modificando valores:**
+
+```python
+meu_dicionario["idade"] = 31  # Altera o valor da chave "idade"
+```
+
+**Adicionando novos pares:**
+
+```python
+meu_dicionario["profissao"] = "Engenheira"
+```
+
+**Removendo pares:**
+
+```python
+del meu_dicionario["cidade"]
+```
+
+**Verificando se uma chave existe:**
+
+```python
+if "idade" in meu_dicionario:
+    print("A chave 'idade' existe")
+```
+
+**Métodos úteis:**
+
+* **`keys()`:** Retorna uma lista com todas as chaves.
+* **`values()`:** Retorna uma lista com todos os valores.
+* **`items()`:** Retorna uma lista de tuplas (chave, valor).
+* **`get(chave, valor_padrao)`:** Retorna o valor da chave, ou um valor padrão se a chave não existir.
+
+**Exemplo:**
+
+```python
+usuario = {"nome": "Bob", "email": "bob@example.com", "enderecos": ["Rua A", "Rua B"]}
+
+print(usuario["nome"])  # Imprime "Bob"
+print(usuario.get("telefone", "Não encontrado"))  # Imprime "Não encontrado"
+
+for chave, valor in usuario.items():
+    print(chave, valor)
+```
+
+**Quando usar dicionários:**
+
+* **Armazenar dados relacionados:** Dicionários são ideais para armazenar informações relacionadas, como dados de um usuário, configurações de um programa, etc.
+* **Implementar estruturas de dados mais complexas:** Dicionários podem ser usados para criar estruturas de dados mais complexas, como grafos e árvores.
+
+**Diferenças entre dicionários e listas:**
+
+| Característica | Dicionários | Listas |
+|---|---|---|
+| Acesso aos elementos | Através de chaves | Através de índices numéricos |
+| Ordem dos elementos | Não ordenados | Ordenados |
+| Duplicatas de chaves | Não permite | Permite duplicatas de valores |
+
+**Em resumo:**
+
+Dicionários são uma ferramenta poderosa em Python para armazenar e organizar dados. Sua flexibilidade e facilidade de uso os tornam uma estrutura de dados fundamental em muitas aplicações.
+
+**Gostaria de explorar algum outro aspecto dos dicionários em Python?** Por exemplo, podemos aprofundar em:
+
+* **Compreensão de dicionários:** Uma forma concisa de criar dicionários.
+* **Aninhamento de dicionários:** Criando dicionários dentro de dicionários.
+* **Métodos avançados:** `popitem`, `update`, etc.
+* **Aplicações de dicionários:** Exemplos práticos de uso de dicionários.
+
+**Qual tópico te interessa mais?**
+
