@@ -483,3 +483,80 @@ for chave, valor in usuario.items():
 
 Dicionários são uma ferramenta poderosa em Python para armazenar e organizar dados. Sua flexibilidade e facilidade de uso os tornam uma estrutura de dados fundamental em muitas aplicações.
 
+## Funções em Python
+
+**O que são funções em Python?**
+
+Funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas permitem organizar o código em partes menores, tornando-o mais legível, modular e fácil de manter.
+
+**Por que usar funções?**
+
+* **Reutilização de código:** Evite repetir o mesmo código várias vezes em seu programa.
+* **Modularidade:** Divida seu programa em partes menores e mais gerenciáveis.
+* **Abstração:** Esconda a complexidade de uma tarefa, expondo apenas a sua interface.
+* **Melhora da legibilidade:** Torna o código mais fácil de entender e depurar.
+
+**Como definir uma função:**
+
+```python
+def nome_da_funcao(parâmetros):
+    """Documentação da função"""
+    # Corpo da função
+    return valor
+```
+
+* **`def`:** Palavra-chave para definir uma função.
+* **`nome_da_funcao`:** Nome escolhido para a função.
+* **`parâmetros`:** Lista de parâmetros que a função recebe (opcional).
+* **`documentação`:** String que descreve o que a função faz.
+* **`return`:** Retorna um valor (opcional).
+
+**Exemplo:**
+
+```python
+def saudacao(nome):
+    """Retorna uma saudação personalizada."""
+    return f"Olá, {nome}!"
+
+resultado = saudacao("Alice")
+print(resultado)  # Saída: Olá, Alice!
+```
+
+**Tipos de parâmetros:**
+
+* **Parâmetros obrigatórios:** Devem ser fornecidos ao chamar a função.
+* **Parâmetros opcionais:** Possuem um valor padrão e podem ser omitidos na chamada.
+* **Parâmetros arbitrários:** Permitem passar um número variável de argumentos.
+
+**Exemplo com parâmetros opcionais e arbitrários:**
+
+```python
+def calcular_media(*numeros, peso=1):
+    """Calcula a média de uma lista de números."""
+    soma = sum(numeros) * peso
+    return soma / len(numeros)
+
+media = calcular_media(1, 2, 3, 4, peso=2)
+print(media)  # Saída: 5.0
+```
+
+**Funções aninhadas:**
+
+É possível definir funções dentro de outras funções.
+
+**Funções recursivas:**
+
+Uma função que chama a si mesma, diretamente ou indiretamente.
+
+**Escopos de variáveis:**
+
+* **Local:** Variáveis definidas dentro de uma função.
+* **Global:** Variáveis definidas fora de qualquer função.
+
+**Decoradores:**
+
+Modificam o comportamento de uma função sem alterar seu código.
+
+**Em resumo:**
+
+Funções são um dos conceitos mais importantes em Python. Elas permitem organizar o código de forma eficiente e reutilizável. Ao entender como criar e utilizar funções, você estará mais preparado para desenvolver programas mais complexos e bem estruturados.
