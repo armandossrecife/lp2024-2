@@ -77,3 +77,6 @@ for numero in numeros:
 
 print("A soma dos números pares é:", soma)
 ```
+### Exercícios
+
+[Exercícios sobre seleções e loops](https://github.com/armandossrecife/lp2024-2/blob/main/exercicios1.ipynb)
