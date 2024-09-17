@@ -169,6 +169,60 @@ num_python = palavras.count("PYTHON")
 print(num_python)  # Saída: 2
 ```
 
-**Resumo:**
+## Slicing em Strings: Cortando Seções de Texto
+
+**Slicing** é uma técnica que permite extrair partes específicas de uma string. 
+
+**Sintaxe:**
+```python
+string[start:end:step]
+```
+* **start:** Índice inicial (incluso).
+* **end:** Índice final (exclusivo).
+* **step:** Passo, ou seja, a quantidade de elementos a serem pulados (opcional, padrão é 1).
+
+**Exemplos:**
+
+```python
+frase = "Python é incrível!"
+
+# Extraindo a palavra "Python"
+primeira_palavra = frase[0:6]  # Ou simplesmente frase[:6]
+print(primeira_palavra)  # Saída: Python
+
+# Extraindo a última palavra
+ultima_palavra = frase[7:]
+print(ultima_palavra)  # Saída: é incrível!
+
+# Extraindo cada segundo caractere
+caracteres_pares = frase[::2]
+print(caracteres_pares)  # Saída: Ptyo éinríel!
+
+# Invertendo a string
+frase_invertida = frase[::-1]
+print(frase_invertida)  # Saída: !lcívere é nohtyP
+
+# Extraindo uma fatia do meio
+meio_da_frase = frase[7:13]
+print(meio_da_frase)  # Saída: é incr
+```
+
+**Detalhamento:**
+
+* **Extraindo a palavra "Python":** Começamos no índice 0 e vamos até o índice 6 (exclusivo), pegando os primeiros 6 caracteres.
+* **Extraindo a última palavra:** Se omitirmos o índice final, ele vai até o fim da string.
+* **Extraindo cada segundo caractere:** O passo 2 faz com que a cada iteração pulamos um caractere.
+* **Invertendo a string:** Um passo negativo inverte a ordem dos caracteres.
+* **Extraindo uma fatia do meio:** Definimos explicitamente o início e o fim da fatia.
+
+**Observações importantes:**
+
+* **Índices negativos:** Índices negativos contam a partir do final da string. Por exemplo, `frase[-1]` acessa o último caractere.
+* **Omissão de índices:** Se o índice inicial for omitido, começa do início. Se o índice final for omitido, vai até o final.
+* **Slicing em listas:** Slicing também funciona em listas, tuplas e outros tipos de sequências em Python.
+
+Slicing é uma ferramenta poderosa para manipular strings e outras sequências em Python. Com ele, você pode extrair partes específicas de uma string de forma rápida e eficiente.
+
+## Resumo
 
 As strings são um tipo de dado fundamental em Python, utilizado para representar texto. Elas oferecem diversas funcionalidades para manipulação e formatação de texto, tornando-as uma ferramenta essencial para a programação.
