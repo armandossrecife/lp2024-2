@@ -6,7 +6,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Estruturas de Seleção e Repetição em Python](https://github.com/armandossrecife/lp2024-2/blob/main/selecao_repeticao.md)
 
-[String](https://github.com/armandossrecife/lp2024-2/blob/main/strings.md)
+[Strings](https://github.com/armandossrecife/lp2024-2/blob/main/strings.md)
 
 Listas em Python
 
