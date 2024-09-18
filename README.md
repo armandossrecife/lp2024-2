@@ -8,7 +8,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Strings](https://github.com/armandossrecife/lp2024-2/blob/main/strings.md)
 
-Listas em Python
+[Listas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/listas.md)
 
 Tuplas em Python
 
