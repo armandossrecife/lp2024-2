@@ -30,7 +30,7 @@ Para extrair uma parte de uma string, usamos o slicing:
 
 ```python
 frase = "Linguagem de programação"
-palavra = frase[9:18]  # 'programação'
+palavra = frase[14:24]  # 'programação'
 ```
 
 ## Imutabilidade
@@ -48,7 +48,7 @@ As strings em Python são imutáveis. Isso significa que você não pode modific
 ```python
 frase = "Olá, mundo!"
 print(frase.upper())  # OLÁ, MUNDO!
-print(frase.find("mundo"))  # 7
+print(frase.find("mundo"))  # 5
 nova_frase = frase.replace("mundo", "Python")  # Olá, Python!
 ```
 
@@ -103,7 +103,8 @@ Retorna o índice da primeira ocorrência de uma substring dentro da string. Se 
 ```python
 frase = "A linguagem Python é muito poderosa."
 indice_python = frase.find("Python")
-print(indice_python)  # Saída: 10 (pois "Python" começa na posição 10)
+print(frase[12]) # P
+print(indice_python)  # Saída: 112 (pois "Python" começa na posição 12)
 ```
 
 ### replace()
@@ -166,7 +167,7 @@ palavras = texto_maiúsculo.split()
 # Conta quantas vezes a palavra "PYTHON" aparece
 num_python = palavras.count("PYTHON")
 
-print(num_python)  # Saída: 2
+print(num_python)  # Saída: 1
 ```
 
 ## Slicing em Strings: Cortando Seções de Texto
@@ -194,9 +195,14 @@ print(primeira_palavra)  # Saída: Python
 ultima_palavra = frase[7:]
 print(ultima_palavra)  # Saída: é incrível!
 
-# Extraindo cada segundo caractere
+# Extraindo um caractere e pulando o próximo
 caracteres_pares = frase[::2]
-print(caracteres_pares)  # Saída: Ptyo éinríel!
+print(caracteres_pares)  # Saída: Pto  nrvl
+
+# Pega o 1o. caractere e pula para o próximo
+teste = "abcdefghijlkmnopqrstuvxz"
+print(teste[::2]) # Saída: acegilmoqsux
+
 
 # Invertendo a string
 frase_invertida = frase[::-1]
