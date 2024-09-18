@@ -10,7 +10,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Listas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/listas.md)
 
-Tuplas em Python
+[Tuplas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/tuplas.md)
 
 Conjuntos (Sets) em Python
 
