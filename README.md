@@ -14,7 +14,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Conjuntos (Sets) em Python](https://github.com/armandossrecife/lp2024-2/blob/main/sets.md)
 
-Dicionários em Python
+[Dicionários em Python](https://github.com/armandossrecife/lp2024-2/blob/main/dicionarios.md)
 
 Funções em Python
 
