@@ -16,7 +16,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Dicionários em Python](https://github.com/armandossrecife/lp2024-2/blob/main/dicionarios.md)
 
-Funções em Python
+[Funções em Python](https://github.com/armandossrecife/lp2024-2/blob/main/funcoes.md)
 
 Manipulando Data, Hora e Gerando Números Aleatórios em Python
 
