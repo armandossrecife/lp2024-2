@@ -108,6 +108,21 @@ Dicionários são estruturas de dados extremamente versáteis em Python, com in�
   for palavra in texto.split():
       contagem_palavras[palavra] = contagem_palavras.get(palavra, 0) + 1
   ```
+
+```python
+print(contagem_palavras)
+```
+  ```python
+{'Python': 1,
+ 'é': 1,
+ 'uma': 1,
+ 'linguagem': 1,
+ 'de': 1,
+ 'programação': 1,
+ 'poderosa': 1,
+ 'e': 1,
+ 'versátil': 1}
+  ```
 * **Contar o número de ocorrências de cada letra em uma string:**
   ```python
   texto = "banana"
@@ -115,6 +130,12 @@ Dicionários são estruturas de dados extremamente versáteis em Python, com in�
   for letra in texto:
       contagem_letras[letra] = contagem_letras.get(letra, 0) + 1
   ```
+
+```python
+print(contagem_letras)
+
+{'b': 1, 'a': 3, 'n': 2}
+```
 
 ### 3. **Representando grafos:**
 
@@ -131,6 +152,9 @@ Dicionários são estruturas de dados extremamente versáteis em Python, com in�
 * **Criar um dicionário com palavras em dois idiomas:**
   ```python
   dicionario_ingles_portugues = {"hello": "olá", "world": "mundo"}
+
+  print(dicionario_ingles_portugues['hello'])
+  olá
   ```
 
 ### 6. **Análise de dados:**
