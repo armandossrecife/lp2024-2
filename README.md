@@ -18,6 +18,6 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Funções em Python](https://github.com/armandossrecife/lp2024-2/blob/main/funcoes.md)
 
-Manipulando Data, Hora e Gerando Números Aleatórios em Python
+[Manipulando Data, Hora](https://github.com/armandossrecife/lp2024-2/blob/main/data.md) e [Gerando Números Aleatórios em Python](https://github.com/armandossrecife/lp2024-2/blob/main/randomico.md)
 
 Sistema de Arquivos em Python
