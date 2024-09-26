@@ -28,7 +28,7 @@ Criando Gráficos 2d com a biblioteca Matplotlib
 
 Introdução a biblioteca Pandas
 
-Introdução a programação GUI (Graphical User Interface) com o toolkit Tkinter
+Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkinter](https://github.com/armandossrecife/mytkinter)
 
 Introdução a manipulação de requisições HTTP usando a biblioteca requests
 
