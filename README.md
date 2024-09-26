@@ -24,14 +24,14 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 Introdução a Programação a Orientada Objetos
 
-Criando Gráficos 2d com a biblioteca Matplotlib
+Criando Gráficos 2d com a biblioteca [Matplotlib](https://matplotlib.org/)
 
-Introdução a biblioteca Pandas
+Introdução a biblioteca [Pandas](https://pandas.pydata.org/)
 
 Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkinter](https://github.com/armandossrecife/mytkinter)
 
-Introdução a manipulação de requisições HTTP usando a biblioteca requests
+Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
 
-Introdução a manipulação de imagens usando a bilioteca pillow
+Introdução a manipulação de imagens usando a bilioteca [pillow](https://pillow.readthedocs.io/en/stable/)
 
 
