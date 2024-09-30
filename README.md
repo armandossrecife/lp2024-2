@@ -20,7 +20,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Manipulando Data, Hora](https://github.com/armandossrecife/lp2024-2/blob/main/data.md) e [Gerando Números Aleatórios em Python](https://github.com/armandossrecife/lp2024-2/blob/main/randomico.md)
 
-[Sistema de Arquivos em Python](https://github.com/armandossrecife/lp2024-2/blob/main/arquivos.md)
+[Manipulando um Sistema de Arquivos usando Python](https://github.com/armandossrecife/lp2024-2/blob/main/arquivos.md)
 
 Introdução a Programação a Orientada Objetos
 
