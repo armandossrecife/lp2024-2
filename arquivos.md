@@ -1,6 +1,6 @@
-## Sistema de Arquivos em Python
+## Manipulando Sistema de Arquivos em Python
 
-**O que é o sistema de arquivos em Python?**
+**Como manipular um sistema de arquivos usando Python?**
 
 O sistema de arquivos em Python oferece um conjunto de ferramentas para interagir com o sistema operacional, permitindo que você crie, leia, escreva, renomeie, exclua e gerencie arquivos e diretórios. Essas funcionalidades são essenciais para qualquer aplicação que precise lidar com dados armazenados em disco.
 
