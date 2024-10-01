@@ -44,6 +44,31 @@ https://docs.python.org/3/library/datetime.html
   ```python
   ano = data_hoje.year
   mes = data_hoje.month
+  dia = data_hoje.day
+  ```
+  **Dia da semana**
+  ```python
+  dia_semana = data_hoje.weekday()
+
+  # funcao para mostrar o dia da semana: 
+  def dia_da_semana(dia_semana):
+    if dia_semana == 0:
+      return 'segunda-feira'
+    elif dia_semana == 1:
+      return 'terça-feira'
+    elif dia_semana == 2:
+      return 'quarta-feira'
+    elif dia_semana == 3:
+      return 'quinta-feira'
+    elif dia_semana == 4:
+      return 'sexta-feira'
+    elif dia_semana == 5: 
+      return 'sabado-feira'
+    elif dia_semana == 6: 
+      return 'domingo'
+
+  print(f"{dia}/{mes}/{ano} - {dia_da_semana(dia_semana)}")
+
   ```
 
 ### Funcionalidades Avançadas
