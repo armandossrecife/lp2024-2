@@ -2,25 +2,25 @@
 
 Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação)
 
-[Variáveis, Tipos e Operações](https://github.com/armandossrecife/lp2024-2/blob/main/variaveis.md)
+[Variáveis, Tipos e Operações](https://github.com/armandossrecife/lp2024-2/blob/main/docs/variaveis.md)
 
-[Estruturas de Seleção e Repetição em Python](https://github.com/armandossrecife/lp2024-2/blob/main/selecao_repeticao.md)
+[Estruturas de Seleção e Repetição em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/selecao_repeticao.md)
 
-[Strings](https://github.com/armandossrecife/lp2024-2/blob/main/strings.md)
+[Strings](https://github.com/armandossrecife/lp2024-2/blob/main/docs/strings.md)
 
-[Listas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/listas.md)
+[Listas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/listas.md)
 
-[Tuplas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/tuplas.md)
+[Tuplas em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/tuplas.md)
 
-[Conjuntos (Sets) em Python](https://github.com/armandossrecife/lp2024-2/blob/main/sets.md)
+[Conjuntos (Sets) em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/sets.md)
 
-[Dicionários em Python](https://github.com/armandossrecife/lp2024-2/blob/main/dicionarios.md)
+[Dicionários em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/dicionarios.md)
 
-[Funções em Python](https://github.com/armandossrecife/lp2024-2/blob/main/funcoes.md)
+[Funções em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/funcoes.md)
 
-[Manipulando Data, Hora](https://github.com/armandossrecife/lp2024-2/blob/main/data.md) e [Gerando Números Aleatórios em Python](https://github.com/armandossrecife/lp2024-2/blob/main/randomico.md)
+[Manipulando Data, Hora](https://github.com/armandossrecife/lp2024-2/blob/main/docs/data.md) e [Gerando Números Aleatórios em Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/randomico.md)
 
-[Manipulando um Sistema de Arquivos usando Python](https://github.com/armandossrecife/lp2024-2/blob/main/arquivos.md)
+[Manipulando um Sistema de Arquivos usando Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/arquivos.md)
 
 Introdução a Programação a Orientada Objetos
 
@@ -33,5 +33,3 @@ Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkint
 Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
 
 Introdução a manipulação de imagens usando a bilioteca [pillow](https://pillow.readthedocs.io/en/stable/)
-
-
