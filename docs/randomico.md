@@ -2,6 +2,8 @@
 
 **O módulo `random` é a ferramenta principal em Python para gerar números aleatórios.** Ele oferece diversas funções para criar sequências de números aparentemente aleatórios, que são úteis em uma variedade de aplicações, desde jogos até simulações e algoritmos de aprendizado de máquina.
 
+https://docs.python.org/3/library/random.html
+
 ### Funcionalidades Principais
 
 * **`random.random()`:** Gera um número de ponto flutuante aleatório entre 0.0 e 1.0 (exclusivo).
