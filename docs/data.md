@@ -2,6 +2,8 @@
 
 **O módulo `datetime` é a ferramenta principal em Python para trabalhar com datas e horas.** Ele oferece uma variedade de classes e funções para criar, modificar e comparar datas e horas de forma precisa.
 
+https://docs.python.org/3/library/datetime.html
+
 ### Classes Principais
 
 * **`date`:** Representa uma data (ano, mês, dia).
