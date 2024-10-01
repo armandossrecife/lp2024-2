@@ -33,3 +33,7 @@ Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkint
 Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
 
 Introdução a manipulação de imagens usando a bilioteca [pillow](https://pillow.readthedocs.io/en/stable/)
+
+## Carregando o ambiente de testes
+
+Você pode acessar e testar os códigos do repositório usando o VS Code online seguindos as instruções deste [link](https://github.com/armandossrecife/lp2024-2/blob/main/docs/acesso_vscode.md). 
