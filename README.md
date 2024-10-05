@@ -26,7 +26,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Introdução a Programação a Orientada Objetos](https://github.com/armandossrecife/lp2024-2/blob/main/docs/poo.md)
 
-Criando Gráficos 2d com a biblioteca [Matplotlib](https://matplotlib.org/)
+[Criando Gráficos 2d](https://github.com/armandossrecife/lp2024-2/blob/main/matplotlib_basic.ipynb) com a biblioteca [Matplotlib](https://matplotlib.org/)
 
 Introdução a biblioteca [Pandas](https://pandas.pydata.org/)
 
