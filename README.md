@@ -22,6 +22,8 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Manipulando um Sistema de Arquivos usando Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/arquivos.md)
 
+[Trabalhando com Exceções no Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/excecoes.md)
+
 Introdução a Programação a Orientada Objetos
 
 Criando Gráficos 2d com a biblioteca [Matplotlib](https://matplotlib.org/)
