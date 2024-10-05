@@ -24,7 +24,7 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Trabalhando com Exceções no Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/excecoes.md)
 
-Introdução a Programação a Orientada Objetos
+[Introdução a Programação a Orientada Objetos](https://github.com/armandossrecife/lp2024-2/blob/main/docs/poo.md)
 
 Criando Gráficos 2d com a biblioteca [Matplotlib](https://matplotlib.org/)
 
