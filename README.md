@@ -22,6 +22,8 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 [Manipulando um Sistema de Arquivos usando Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/arquivos.md)
 
+[Salvando os dados de pessoas em um arquivo](https://github.com/armandossrecife/lp2024-2/blob/main/docs/salva_em_arquivo.md)
+
 [Trabalhando com Exceções no Python](https://github.com/armandossrecife/lp2024-2/blob/main/docs/excecoes.md)
 
 [Introdução a Programação a Orientada Objetos](https://github.com/armandossrecife/lp2024-2/blob/main/docs/poo.md)
