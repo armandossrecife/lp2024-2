@@ -97,30 +97,16 @@ A biblioteca JSON em Python oferece uma maneira fácil de converter dados Python
 import json
 
 def carregar_dados(arquivo):
-    """Carrega dados de um arquivo JSON.
-
-    Args:
-        arquivo (str): Nome do arquivo JSON.
-
-    Returns:
-        dict: Dicionário com os dados carregados.
-    """
     try:
-        with open(arquivo, 'r') as f:
+        with open(arquivo, 'r', encoding='utf-8') as f:
             dados = json.load(f)
     except FileNotFoundError:
         dados = {}
     return dados
 
 def salvar_dados(dados, arquivo):
-    """Salva dados em um arquivo JSON.
-
-    Args:
-        dados (dict): Dicionário com os dados a serem salvos.
-        arquivo (str): Nome do arquivo JSON.
-    """
-    with open(arquivo, 'w') as f:
-        json.dump(dados, f, indent=4)
+    with open(arquivo, 'w', encoding='utf-8') as f:
+        json.dump(dados, f, ensure_ascii=False)
 
 # ... resto do código ...
 
