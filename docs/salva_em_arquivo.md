@@ -67,6 +67,8 @@ def carregar_dados(pessoas):
 4. **Listar pessoas:** Chame a função `listar_pessoas()` para ver a lista de pessoas cadastradas.
 5. **Salvar dados:** Chame a função `salvar_dados(pessoas)` para salvar as informações no arquivo "pessoas.txt".
 
+Exemplo disponível em [link](https://github.com/armandossrecife/lp2024-2/blob/main/salvar_dados_pessoas.ipynb)
+
 ### Explicando a estrutura de dados
 
 O dicionário `pessoas` é uma estrutura de dados muito útil para armazenar informações de forma organizada. Cada chave do dicionário representa um CPF único, e o valor associado a essa chave é outro dicionário que contém as informações da pessoa (nome e telefone).
