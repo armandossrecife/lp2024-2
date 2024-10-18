@@ -82,3 +82,47 @@ print("Divisão:", divisao)
 * O tipo de uma variável pode ser verificado usando a função `type()`.
 * Python é uma linguagem tipada dinamicamente, o que significa que você não precisa declarar o tipo de uma variável antes de usá-la.
 * As operações entre diferentes tipos de dados podem resultar em conversões implícitas.
+
+## Entrada e Saída de Dados Simples em Python
+
+**Entrada de dados** em Python se refere ao processo de obter informações do usuário ou de um arquivo externo para serem utilizadas em um programa. A função principal para isso é a `input()`.
+
+**Saída de dados** é a forma de exibir o resultado de um cálculo ou qualquer outra informação para o usuário. A função mais comum para isso é a `print()`.
+
+### Função `input()`
+* **Sintaxe:** `variavel = input("mensagem para o usuário")`
+* **Funcionamento:**
+  1. A mensagem entre aspas é exibida na tela.
+  2. O programa pausa, esperando que o usuário digite algo e pressione Enter.
+  3. O valor digitado pelo usuário é armazenado na variável especificada.
+
+**Exemplo:**
+```python
+nome = input("Digite seu nome: ")
+print("Olá,", nome + "!")
+```
+
+### Função `print()`
+* **Sintaxe:** `print("mensagem a ser exibida")`
+* **Funcionamento:**
+  1. Exibe a mensagem entre aspas na tela.
+  2. Você pode concatenar strings usando o operador `+` para combinar texto com variáveis.
+
+**Exemplo:**
+```python
+idade = 25
+print("Eu tenho", idade, "anos.")
+```
+
+### Conversão de tipos
+É importante lembrar que a função `input()` retorna sempre uma string. Se você precisar de um número (inteiro ou float), é necessário converter o valor usando as funções `int()` ou `float()`:
+
+```python
+numero = int(input("Digite um número: "))
+print("O dobro do número é:", numero * 2)
+```
+
+### Em resumo
+* **`input()`:** Captura dados do usuário.
+* **`print()`:** Exibe dados na tela.
+* **Conversão de tipos:** Use `int()` e `float()` para converter strings em números.
