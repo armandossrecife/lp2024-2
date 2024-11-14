@@ -32,6 +32,8 @@ Turma de Laboratório de Programação UFPI 2024.2 (Departamento de Computação
 
 Introdução a biblioteca [Pandas](https://pandas.pydata.org/)
 
+Introdução a biblioteca [GeoPandas](https://geopandas.org/en/stable)
+
 Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkinter](https://github.com/armandossrecife/mytkinter)
 
 Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
