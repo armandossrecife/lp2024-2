@@ -47,6 +47,8 @@ Imagine um sistema de e-commerce. Ele pode ser dividido em módulos como:
 
 Cada módulo teria suas próprias classes, métodos e dados, mas se comunicaria com os outros módulos através de interfaces bem definidas.
 
+[Modularidade no Python](https://github.com/armandossrecife/lp2024-2/blob/main/modularidade_python.md)
+
 **Em resumo:**
 
 A modularidade é uma técnica essencial para o desenvolvimento de software de alta qualidade. Ao dividir um programa em módulos bem definidos, você aumenta a manutenibilidade, a reutilização de código e a compreensão do sistema. Ao seguir os conceitos e técnicas apresentados neste texto, você poderá criar softwares mais robustos, escaláveis e fáceis de manter.
