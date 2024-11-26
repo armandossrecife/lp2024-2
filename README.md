@@ -40,6 +40,10 @@ Introdução a manipulação de requisições HTTP usando a biblioteca [requests
 
 Introdução a manipulação de imagens usando a bilioteca [pillow](https://pillow.readthedocs.io/en/stable/)
 
+[Boas práticas de programação](https://github.com/armandossrecife/lp2024-2/blob/main/boas_praticas.ipynb)
+
+[Modularidade](https://github.com/armandossrecife/lp2024-2/blob/main/modularidade.md)
+
 ## Carregando o ambiente de testes
 
 Você pode acessar e testar os códigos do repositório usando o VS Code online seguindos as instruções deste [link](https://github.com/armandossrecife/lp2024-2/blob/main/docs/acesso_vscode.md). 
