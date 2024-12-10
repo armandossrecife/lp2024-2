@@ -38,6 +38,8 @@ Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkint
 
 Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
 
+Recomendações nas requisições (usando o requests) HTTP: [recomendações](https://github.com/armandossrecife/lp2024-2/blob/main/docs/requests.md)
+
 Introdução a manipulação de imagens usando a bilioteca [pillow](https://pillow.readthedocs.io/en/stable/)
 
 [Boas práticas de programação](https://github.com/armandossrecife/lp2024-2/blob/main/boas_praticas.ipynb)
