@@ -48,3 +48,7 @@ O HTTP, é a base da comunicação de dados na World Wide Web. Quando você baix
 * **Tratamento de erros:** Se houver problemas durante o download (por exemplo, erros de rede, problemas no servidor), o navegador pode tentar novamente o download ou exibir uma mensagem de erro.
 
 Ao seguir essas etapas, você pode baixar arquivos da Internet com eficácia usando o protocolo HTTP.
+
+**Exemplos:**
+
+[Como fazer o download de um arquivo usando o Python?](https://github.com/armandossrecife/lp2024-1/blob/main/my_download.ipynb) 
