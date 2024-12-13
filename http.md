@@ -17,7 +17,7 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 
 * **HTTP/0.9 (1989):** Primeira versão, simples e com um único método (GET). By [T. Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee)
 * **[HTTP/1.0](https://datatracker.ietf.org/doc/html/rfc1945) (1996):** Introduziu novos métodos (POST, HEAD) e suporte a diferentes tipos de conteúdo.
-* **[HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112) (2018):** Versão mais comum, com melhorias como conexões persistentes, pipelining e codificação de transferência em partes.
+* **[HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112) :** Versão mais comum, com melhorias como conexões persistentes, pipelining e codificação de transferência em partes.
 * **[HTTP/2](https://datatracker.ietf.org/doc/html/rfc9113) (2015):** Versão mais recente, com foco em desempenho e segurança.
 
 **Componentes chave:**
@@ -37,4 +37,4 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 
 **Em resumo:**
 
-O HTTP é o protocolo que permite a comunicação entre clientes e servidores na web. Ele define as regras para as requisições e respostas, permitindo que navegadores e servidores se comuniquem de forma eficiente e segura. O entendimento do HTTP é fundamental para o desenvolvimento web e para a compreensão de como a internet funciona. Além disso, também temos a [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web), uma rede interconectada de páginas web, que utiliza o HTTP para transmitir documentos [HTML](https://en.wikipedia.org/wiki/HTML) identificados por [URLs](https://en.wikipedia.org/wiki/URL) únicas, permitindo aos usuários acessar e navegar por informações globalmente.
+O HTTP é o protocolo que permite a comunicação entre clientes e servidores na [web](https://en.wikipedia.org/wiki/Web_content). Ele define as regras para as requisições e respostas, permitindo que navegadores e servidores se comuniquem de forma eficiente e segura. O entendimento do HTTP é fundamental para o desenvolvimento web e para a compreensão de como a internet funciona. Além disso, também temos a [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web), uma rede interconectada de páginas web, que utiliza o HTTP para transmitir documentos [HTML](https://en.wikipedia.org/wiki/HTML) identificados por [URLs](https://en.wikipedia.org/wiki/URL) únicas, permitindo aos usuários acessar e navegar por informações globalmente.
