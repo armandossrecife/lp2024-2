@@ -35,6 +35,10 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 * **[Sessões](https://en.wikipedia.org/wiki/Session_(computer_science)):** Mecanismo para manter o estado de um usuário entre múltiplas requisições.
 * **[Cache](https://en.wikipedia.org/wiki/Cache_(computing)):** Armazenamento temporário de recursos para melhorar o desempenho.
 
+**Exemplos:**
+
+Como funciona o [download de arquivos](https://github.com/armandossrecife/lp2024-2/blob/main/download.md) usando o HTTP?
+
 **Em resumo:**
 
 O HTTP é o [protocolo](https://en.wikipedia.org/wiki/Communication_protocol) que permite a comunicação entre clientes e servidores na [web](https://en.wikipedia.org/wiki/Web_content). Ele define as regras para as requisições e respostas, permitindo que navegadores e servidores se comuniquem de forma eficiente e segura. O entendimento do HTTP é fundamental para o desenvolvimento web e para a compreensão de como a internet funciona. Além disso, vale destacar a importância da [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web), uma rede interconectada de páginas web, que utiliza o HTTP para transmitir documentos [HTML](https://en.wikipedia.org/wiki/HTML) identificados por [URLs](https://en.wikipedia.org/wiki/URL) únicas, permitindo aos usuários acessar e navegar por informações globalmente.
