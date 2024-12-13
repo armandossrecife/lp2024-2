@@ -31,9 +31,9 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 
 **Conceitos importantes:**
 
-* **Cookies:** Pequenos arquivos armazenados no navegador para rastrear usuários e suas preferências.
-* **Sessões:** Mecanismo para manter o estado de um usuário entre múltiplas requisições.
-* **Cache:** Armazenamento temporário de recursos para melhorar o desempenho.
+* **[Cookies](https://en.wikipedia.org/wiki/HTTP_cookie):** Pequenos arquivos armazenados no navegador para rastrear usuários e suas preferências.
+* **[Sessões](https://en.wikipedia.org/wiki/Session_(computer_science)):** Mecanismo para manter o estado de um usuário entre múltiplas requisições.
+* **[Cache](https://en.wikipedia.org/wiki/Cache_(computing)):** Armazenamento temporário de recursos para melhorar o desempenho.
 
 **Em resumo:**
 
