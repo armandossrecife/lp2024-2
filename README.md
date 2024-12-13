@@ -36,7 +36,7 @@ Introdução a biblioteca [GeoPandas](https://geopandas.org/en/stable)
 
 Introdução a programação GUI (Graphical User Interface) com o toolkit [Tkinter](https://github.com/armandossrecife/mytkinter)
 
-Introdução a manipulação de requisições HTTP usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
+Introdução a manipulação de requisições [HTTP](https://github.com/armandossrecife/lp2024-2/blob/main/http.md) usando a biblioteca [requests](https://requests.readthedocs.io/en/latest/)
 
 Recomendações nas requisições (usando o requests) HTTP: [recomendações](https://github.com/armandossrecife/lp2024-2/blob/main/docs/requests.md)
 
