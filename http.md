@@ -2,7 +2,7 @@
 
 **O que é [HTTP](https://en.wikipedia.org/wiki/HTTP)?**
 
-O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a comunicação entre clientes (normalmente navegadores) e servidores na World Wide Web. É a base para a troca de informações na internet, como páginas web, imagens, vídeos e outros tipos de dados.
+O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a comunicação entre clientes (normalmente navegadores) e servidores na World Wide Web. É a base para a troca de informações na internet, como páginas web, [imagens](https://www.bbc.co.uk/bitesize/guides/z6qqmsg/revision/8), [vídeos](https://en.wikipedia.org/wiki/Digital_video) e outros tipos de dados.
 
 **Como funciona?**
 
