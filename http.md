@@ -17,7 +17,7 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 
 * **HTTP/0.9 (1989):** Primeira versão, simples e com um único método (GET). By [T. Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee)
 * **[HTTP/1.0](https://datatracker.ietf.org/doc/html/rfc1945) (1996):** Introduziu novos métodos (POST, HEAD) e suporte a diferentes tipos de conteúdo.
-* **[HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112):** Versão mais comum, com melhorias como conexões persistentes, pipelining e codificação de transferência em partes.
+* **[HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc9112) (2018):** Versão mais comum, com melhorias como conexões persistentes, pipelining e codificação de transferência em partes.
 * **[HTTP/2](https://datatracker.ietf.org/doc/html/rfc9113) (2015):** Versão mais recente, com foco em desempenho e segurança.
 
 **Componentes chave:**
