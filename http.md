@@ -37,4 +37,4 @@ O Hypertext Transfer Protocol (HTTP) é o protocolo fundamental que permite a co
 
 **Em resumo:**
 
-O HTTP é o protocolo que permite a comunicação entre clientes e servidores na web. Ele define as regras para as requisições e respostas, permitindo que navegadores e servidores se comuniquem de forma eficiente e segura. O entendimento do HTTP é fundamental para o desenvolvimento web e para a compreensão de como a internet funciona.
+O HTTP é o protocolo que permite a comunicação entre clientes e servidores na web. Ele define as regras para as requisições e respostas, permitindo que navegadores e servidores se comuniquem de forma eficiente e segura. O entendimento do HTTP é fundamental para o desenvolvimento web e para a compreensão de como a internet funciona. Além disso, também temos a [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web), uma rede interconectada de páginas web, que utiliza o HTTP para transmitir documentos [HTML](https://en.wikipedia.org/wiki/HTML) identificados por [URLs](https://en.wikipedia.org/wiki/URL) únicas, permitindo aos usuários acessar e navegar por informações globalmente.
