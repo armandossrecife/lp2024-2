@@ -1,6 +1,6 @@
 ## Como funcionam os downloads de arquivos em HTTP
 
-HTTP, ou Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto), é a base da comunicação de dados na World Wide Web (Rede Mundial de Computadores). Quando você baixa um arquivo de um servidor, ocorre uma série de etapas:
+O HTTP, é a base da comunicação de dados na World Wide Web. Quando você baixa um arquivo de um servidor, ocorre uma série de etapas:
 
 **1. Solicitação:**
 
