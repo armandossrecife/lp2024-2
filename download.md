@@ -51,4 +51,6 @@ Ao seguir essas etapas, você pode baixar arquivos da Internet com eficácia usa
 
 **Exemplos:**
 
-[Como fazer o download de um arquivo usando o Python?](https://github.com/armandossrecife/lp2024-1/blob/main/my_download.ipynb) 
+- [Como fazer o download de um arquivo usando o Python?](https://github.com/armandossrecife/lp2024-1/blob/main/my_download.ipynb)
+- [Como fazer o download de um arquivo usando o Java?](https://github.com/armandossrecife/lp2024-2/blob/main/download_java.md)
+
