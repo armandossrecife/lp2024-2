@@ -4,7 +4,7 @@ O HTTP, é a base da comunicação de dados na World Wide Web. Quando você baix
 
 **1. Solicitação:**
 
-* **Cliente (seu navegador) envia uma solicitação GET:**
+* **Uma aplicação Cliente (por exemplo: navegador) envia uma solicitação GET:**
     - O cliente (seu navegador) envia uma solicitação GET HTTP ao servidor. Essa solicitação inclui o URL do arquivo que você deseja baixar.
     - A solicitação geralmente se parece com isto:
     ```
