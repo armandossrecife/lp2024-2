@@ -46,6 +46,10 @@ Introdução a manipulação de imagens usando a bilioteca [pillow](https://pill
 
 [Modularidade](https://github.com/armandossrecife/lp2024-2/blob/main/modularidade.md)
 
+[Introdução ao Desenvolvimento Web](https://github.com/armandossrecife/lp2024-2/blob/main/web.md)
+
+[Introdução ao micro-framework Flask](https://github.com/armandossrecife/lp2024-2/blob/main/webflask.md)
+
 ## Carregando o ambiente de testes
 
 Você pode acessar e testar os códigos do repositório usando o VS Code online seguindos as instruções deste [link](https://github.com/armandossrecife/lp2024-2/blob/main/docs/acesso_vscode.md). 
