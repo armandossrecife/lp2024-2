@@ -1,8 +1,8 @@
-## Criando uma Agenda de Contatos com Flask, HTML, CSS e JavaScript
+# Criando uma Agenda de Contatos com Flask, HTML, CSS e JavaScript
 
-** Vamos construir juntos uma aplicação simples para cadastrar e listar contatos, utilizando o Flask como nosso framework Python.
+Vamos construir juntos uma aplicação simples para cadastrar e listar contatos, utilizando o [Flask](https://flask.palletsprojects.com/en/stable/) como nosso framework Python.
 
-### 1\. **Configuração do Ambiente:**
+## 1\. **Configuração do Ambiente:**
 
   * **Instalação do Python:** Certifique-se de ter o Python instalado.
   * **Criar um ambiente virtual:**
@@ -18,7 +18,7 @@
     pip install Flask
     ```
 
-### 2\. **Criação do Arquivo app.py:**
+## 2\. **Criação do Arquivo app.py:**
 
 ```python
 from flask import Flask, render_template, request, redirect, url_for
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-### 3\. **Criação dos Templates (index.html):**
+## 3\. **Criação dos Templates (index.html):**
 
 ```html
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 </html>
 ```
 
-### 4\. **Criação do Arquivo de Estilos (static/style.css):**
+## 4\. **Criação do Arquivo de Estilos (static/style.css):**
 
 ```css
 /* Adicione seus estilos aqui */
@@ -86,7 +86,7 @@ body {
 }
 ```
 
-### 5\. **Executar a Aplicação:**
+## 5\. **Executar a Aplicação:**
 
 ```bash
 python app.py
@@ -101,7 +101,7 @@ python app.py
 
 **Como usar a aplicação:**
 
-1.  Acesse a aplicação no seu navegador ([URL inválido removido]).
+1.  Acesse a aplicação no seu navegador.
 2.  Preencha o formulário e clique em "Adicionar".
 3.  O contato será adicionado à lista.
 
