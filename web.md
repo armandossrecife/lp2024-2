@@ -63,7 +63,7 @@ Back-end:
 
 ### 5. Segurança
 * [Autenticação](https://en.wikipedia.org/wiki/Authentication) e [autorização](https://en.wikipedia.org/wiki/Authorization): Proteja sua aplicação contra acessos não autorizados.
-* Vulnerabilidades comuns: Conheça os principais tipos de ataques e como mitigá-los.
+* Vulnerabilidades comuns: Conheça os principais tipos de ataques ([OWASP Top 10](https://en.wikipedia.org/wiki/OWASP)) e como mitigá-los.
 * Boas práticas de [segurança](https://en.wikipedia.org/wiki/Application_security): Siga as melhores práticas para garantir a segurança da sua aplicação.
 
 Roadmap Sugerido:
