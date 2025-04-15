@@ -57,6 +57,11 @@ Funções lambda são funções pequenas e anônimas, definidas em uma única li
 dobro = lambda x: x * 2
 ```
 
+```bash
+print(dobro(4))
+8
+```
+
 **Docstrings:**
 
 Docstrings são strings que descrevem o que uma função faz. Elas são muito importantes para a documentação do código.
