@@ -1,111 +1,217 @@
-## Programação Orientada a Objetos em Python
+## **1. Introdução**  
+### **O que é Programação Orientada a Objetos (POO)?**  
+- Paradigma de programação que organiza o código em **objetos**, que são instâncias de **classes**.  
+- Foca na abstração, encapsulamento, herança e polimorfismo.  
+- Python suporta POO de forma flexível e intuitiva.  
 
-A Programação Orientada a Objetos (POO) é um paradigma de programação que organiza o código em torno de **objetos**. Esses objetos possuem **atributos** (características) e **métodos** (ações). Em Python, a POO é uma parte fundamental da linguagem e facilita a criação de código mais modular, reutilizável e fácil de manter.
+### **Por que usar POO?**  
+ **Reutilização de código** (herança, composição)  
+ **Organização melhorada** (modularidade)  
+ **Manutenção mais fácil** (encapsulamento)  
+ **Modelagem do mundo real** (objetos representam entidades)  
 
-### Conceitos Fundamentais
+---
 
-* **Classe:** Um molde para criar objetos. Define os atributos e métodos que os objetos dessa classe terão.
-* **Objeto:** Uma instância de uma classe. É a representação concreta de um objeto no seu programa.
-* **Atributos:** Características de um objeto. São armazenados como variáveis dentro da classe.
-* **Métodos:** Funções definidas dentro de uma classe que operam sobre os objetos.
-* **Herança:** Mecanismo que permite criar novas classes (subclasses) a partir de classes existentes (superclasses), herdando seus atributos e métodos.
-* **Polimorfismo:** Capacidade de objetos de diferentes classes responderem de forma diferente ao mesmo método.
-* **Encapsulamento:** Mecanismo que oculta os detalhes internos de um objeto, expondo apenas uma interface para interação.
+## **2. Conceitos Fundamentais da POO**  
 
-### Sintaxe Básica
+| **Conceito**       | **Definição** | **Exemplo em Python** |
+|---------------------|--------------|-----------------------|
+| **Classe**          | Molde que define atributos e métodos de um objeto. | `class Pessoa:` |
+| **Objeto**          | Instância de uma classe. | `pessoa1 = Pessoa()` |
+| **Atributo**        | Variáveis que armazenam dados do objeto. | `self.nome = "João"` |
+| **Método**          | Funções associadas a um objeto. | `def falar(self):` |
+| **Encapsulamento**  | Proteção de dados (privados/públicos). | `self.__salario` (privado) |
+| **Herança**         | Uma classe herda atributos e métodos de outra. | `class Aluno(Pessoa):` |
+| **Polimorfismo**    | Mesma função comportando-se diferente em classes diferentes. | `def calcular_area()` em `Circulo` e `Quadrado` |
 
+---
+
+## **3. Sintaxe Básica em Python**  
+
+### **Definindo uma Classe**  
 ```python
-class Classe:
-    def __init__(self, atributo1, atributo2):
-        self.atributo1 = atributo1
-        self.atributo2 = atributo2
+class Pessoa:
+    def __init__(self, nome, idade):  # Construtor
+        self.nome = nome  # Atributo público
+        self.__idade = idade  # Atributo privado (__)
 
-    def metodo(self):
-        # Código do método
+    def apresentar(self):  # Método
+        print(f"Olá, meu nome é {self.nome}!")
 ```
 
-* `class`: Palavra-chave para definir uma classe.
-* `__init__`: Método construtor, chamado quando um objeto da classe é criado.
-* `self`: Referência ao objeto atual dentro de um método.
-
-### Exemplo Prático
-
+### **Criando um Objeto**  
 ```python
-class Ponto:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-class Retangulo:
-    def __init__(self, p1, p2, p3, p4):
-        self.p1 = p1
-        self.p2 = p2
-        self.p3 = p3
-        self.p4 = p4
-
-    def calcular_area(self):
-        # Implementar a lógica para calcular a área do retângulo
-        pass
-
-class Triangulo:
-    def __init__(self, p1, p2, p3):
-        self.p1 = p1
-        self.p2 = p2
-        self.p3 = p3
-
-    def calcular_area(self):
-        # Implementar a lógica para calcular a área do triângulo
-        pass
-
-class Circulo:
-    def __init__(self, centro, raio):
-        self.centro = centro
-        self.raio = raio
-
-    def calcular_area(self):
-        # Implementar a lógica para calcular a área do círculo
-        pass
+pessoa1 = Pessoa("Maria", 25)
+pessoa1.apresentar()  # Saída: "Olá, meu nome é Maria!"
 ```
 
-**Explicação:**
-
--   **Classes:** Criamos classes para representar cada forma geométrica.
--   **Atributos:** Cada classe possui atributos que definem as características da forma (coordenadas, raio).
--   **Métodos:** O método `calcular_area` é um exemplo de um método que pode ser implementado em cada classe para calcular a área da forma correspondente.
-
-**Exemplo de Uso:**
-
+### **Herança**  
 ```python
-# Criando objetos das classes
-ponto1 = Ponto(2, 3)
-ponto2 = Ponto(5, 7)
-ponto3 = Ponto(1, 4)
+class Aluno(Pessoa):  # Herda de Pessoa
+    def __init__(self, nome, idade, matricula):
+        super().__init__(nome, idade)  # Chama construtor da classe pai
+        self.matricula = matricula
 
-retangulo1 = Retangulo(ponto1, ponto2, ponto3, Ponto(1, 7))
-triangulo1 = Triangulo(ponto1, ponto2, ponto3)
-circulo1 = Circulo(ponto1, 2)
-
-# Calculando a área do retângulo
-area_retangulo = retangulo1.calcular_area()
-print("Área do retângulo:", area_retangulo)
+    def apresentar_aluno(self):
+        super().apresentar()  # Chama o método apresentar da classe pai
+        print(f"Minha matrícula é: {self.matricula}")
 ```
 
-### Boas Práticas
+Usando a classe Aluno:
 
-* **Escolha nomes significativos:** Nomes de classes, atributos e métodos devem refletir suas funcionalidades.
-* **Utilize o encapsulamento:** Proteja os dados internos dos objetos usando métodos acessores (getters e setters).
-* **Herde com cuidado:** A herança deve ser utilizada de forma consciente para evitar hierarquias de classes complexas.
-* **Utilize polimorfismo:** Crie interfaces comuns para diferentes tipos de objetos.
-* **Documente seu código:** Use docstrings para explicar o propósito de classes, métodos e atributos.
-* **Siga o princípio DRY:** Não repita código, utilize funções e classes para evitar duplicação.
+```python
+# Criando um objeto da classe Aluno
+aluno1 = Aluno("Carlos Silva", 20, "20231015")
 
-### Benefícios da POO
+# Acessando os atributos do objeto aluno1
+print(f"Nome do aluno: {aluno1.nome}")
+print(f"Idade do aluno: {aluno1.idade}")
+print(f"Matrícula do aluno: {aluno1.matricula}")
 
-* **Reutilização de código:** Crie classes base e herde delas para criar novas classes com funcionalidades semelhantes.
-* **Modularidade:** Divida o código em módulos menores e mais fáceis de entender e manter.
-* **Abstração:** Foque nos conceitos importantes e esconda os detalhes de implementação.
-* **Manutenção:** Facilita a identificação e correção de erros, além de permitir alterações no código de forma mais segura.
+# Chamando os métodos do objeto aluno1
+aluno1.apresentar()       # Método herdado da classe Pessoa
+aluno1.apresentar_aluno() # Método específico da classe Aluno
+```
 
-### Conclusão
+---
 
-A POO é uma ferramenta poderosa para organizar e estruturar seu código Python. Ao dominar os conceitos e as boas práticas, você poderá criar programas mais robustos, escaláveis e fáceis de manter.
+## **4. Caso de Uso: Sistema de Gerenciamento de Pessoas**  
+
+### **Problema:**  
+
+Desenvolver um sistema para cadastrar, listar e salvar pessoas em um arquivo.  
+
+A aplicação principal (main) interage com uma classe "Gerenciador de Pessoas" que manipula a classe Pessoa
+
+```mermaid
+classDiagram
+    class Pessoa {
+        -cpf: str
+        -nome: str
+        -telefone: str
+        +__init__(cpf, nome, telefone)
+        +__str__() str
+    }
+
+    class GerenciadorPessoas {
+        -pessoas: dict
+        -arquivo: str
+        +__init__(arquivo="pessoas.txt")
+        +ler_dados() (cpf, nome, telefone)
+        +cadastrar_pessoa()
+        +listar_pessoas()
+        +salvar_dados()
+        +carregar_dados()
+    }
+
+    class Main {
+        +main()
+    }
+
+    GerenciadorPessoas --> Pessoa: Manipula
+    Main --> GerenciadorPessoas: Usa
+```
+
+### **Solução com POO:**  
+```python
+class Pessoa:
+    def __init__(self, cpf, nome, telefone):
+        self.cpf = cpf
+        self.nome = nome
+        self.telefone = telefone
+
+    def __str__(self):
+        return f"CPF: {self.cpf}, Nome: {self.nome}, Telefone: {self.telefone}"
+
+class GerenciadorPessoas:
+    def __init__(self, arquivo="pessoas.txt"):
+        self.pessoas = {}
+        self.arquivo = arquivo
+        self.carregar_dados()
+
+    def ler_dados(self):
+        cpf = input("Digite o CPF: ")
+        nome = input("Digite o nome: ")
+        telefone = input("Digite o telefone: ")
+        return cpf, nome, telefone
+
+    def cadastrar_pessoa(self):
+        cpf, nome, telefone = self.ler_dados()
+        pessoa = Pessoa(cpf, nome, telefone)
+        self.pessoas[cpf] = pessoa
+        print("Pessoa cadastrada com sucesso!")
+
+    def listar_pessoas(self):
+        if not self.pessoas:
+            print("Nenhuma pessoa cadastrada.")
+            return
+        for pessoa in self.pessoas.values():
+            print(pessoa)
+
+    def salvar_dados(self):
+        try:
+            with open(self.arquivo, "w") as arquivo:
+                for pessoa in self.pessoas.values():
+                    linha = f"{pessoa.cpf},{pessoa.nome},{pessoa.telefone}\n"
+                    arquivo.write(linha)
+            print(f"Dados salvos em '{self.arquivo}'!")
+        except IOError:
+            print(f"Erro ao salvar dados no arquivo '{self.arquivo}'.")
+
+    def carregar_dados(self):
+        try:
+            with open(self.arquivo, "r") as arquivo:
+                for linha in arquivo:
+                    cpf, nome, telefone = linha.strip().split(",")
+                    pessoa = Pessoa(cpf, nome, telefone)
+                    self.pessoas[cpf] = pessoa
+            print("Dados carregados com sucesso!")
+        except FileNotFoundError:
+            print(f"Arquivo '{self.arquivo}' não encontrado. Criando um novo...")
+        except IOError:
+            print(f"Erro ao ler dados do arquivo '{self.arquivo}'.")
+
+def main():
+    gerenciador = GerenciadorPessoas()
+    while True:
+        print("\n--- MENU ---")
+        print("1. Cadastrar pessoa")
+        print("2. Listar pessoas")
+        print("3. Salvar dados")
+        print("4. Sair")
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            gerenciador.cadastrar_pessoa()
+        elif opcao == "2":
+            gerenciador.listar_pessoas()
+        elif opcao == "3":
+            gerenciador.salvar_dados()
+        elif opcao == "4":
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida!")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+## **5. Boas Práticas em POO com Python**  
+
+ **Use nomes claros** para classes (`Pessoa`, `ContaBancaria`).  
+ **Encapsule atributos** quando necessário (`self.__saldo`).  
+ **Documente classes e métodos** com docstrings (`"""Classe que representa..."""`).  
+ **Evite herança múltipla** (priorize composição).  
+ **Mantenha métodos pequenos e especializados** (SOLID).  
+
+---
+
+## **6. Benefícios da POO**  
+
+ **Código mais organizado e modular**  
+ **Facilita manutenção e escalabilidade**  
+ **Promove reutilização (herança, composição)**  
+ **Melhor modelagem de problemas do mundo real**  
