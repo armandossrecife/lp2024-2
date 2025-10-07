@@ -35,7 +35,7 @@ class Pessoa:
         self.nome = nome  # Atributo público
         self.__idade = idade  # Atributo privado (__)
 
-    def apresentar(self):  # Método
+    def apresentar(self):  # Método público
         print(f"Olá, meu nome é {self.nome}!")
 ```
 
@@ -43,6 +43,93 @@ class Pessoa:
 ```python
 pessoa1 = Pessoa("Maria", 25)
 pessoa1.apresentar()  # Saída: "Olá, meu nome é Maria!"
+```
+
+### Atributos públicos e atributo privado
+```python
+# Atributos publicos e atributo privado
+class Pessoa():
+  def __init__(self, cpf, nome, salario): # método construtor
+    self.cpf = cpf
+    self.nome = nome
+    self.__salario = salario # atributo privado
+
+# instanciando a classe
+p2 = Pessoa('234567890', 'Carla', 30000)
+print(f"CPF: {p2.cpf}, Nome: {p2.nome}")
+```
+```bash
+CPF: 234567890, Nome: Carla
+```
+
+### Atributos públicos, atributo privado e método público
+```python
+class Pessoa():
+  def __init__(self, cpf, nome, salario):
+    self.cpf = cpf
+    self.nome = nome
+    self.__salario = salario # atributo privado
+
+  def imposto(self): # metodo publico
+    return self.__salario*0.027
+
+p3 = Pessoa('34567892', 'Ana', 25000)
+print(f"CPF: {p3.cpf}, Nome: {p3.nome} Imposto devido: {p3.imposto()}")
+```
+```bash
+CPF: 34567892, Nome: Ana Imposto devido: 675.0
+```
+
+### Publicando um atributo privado 
+```python
+class Pessoa():
+  def __init__(self, cpf, nome, salario):
+    self.cpf = cpf
+    self.nome = nome
+    self.__salario = salario # atributo privado
+
+  def get_salario(self): # metodo publico
+    return self.__salario
+
+  def imposto(self): # metodo publico
+    return self.__salario*0.027
+
+p4 = Pessoa('445678924', 'Daniela', 35000)
+print(f"CPF: {p4.cpf}, Nome: {p4.nome} Salario: {p4.get_salario()}, Imposto devido: {p4.imposto()}")
+```
+```bash
+CPF: 445678924, Nome: Daniela Salario: 35000, Imposto devido: 945.0
+```
+
+### Atributo de classe
+```python
+class Pessoa():
+  contador = 0 # Atributo de classe : indica quantas vezes a classe Pessoa foi instanciada pelo programa corrente
+  def __init__(self, cpf, nome, salario):
+    Pessoa.contador = Pessoa.contador + 1
+    self.cpf = cpf
+    self.nome = nome
+    self.__salario = salario
+
+  def get_salario(self):  
+    return self.__salario
+
+  def imposto(self): # metodo publico
+    return self.__salario*0.027  
+
+p5 = Pessoa('545678925', 'Francisco', 31000)
+print(f"contador: {p5.contador}, CPF: {p5.cpf}, Nome: {p5.nome}, salario: {p5.get_salario()}")
+
+p6 = Pessoa('672342342', 'Antônio', 29000)
+print(f"contador: {p6.contador}, CPF: {p6.cpf}, Nome: {p6.nome}, salario: {p6.get_salario()}")
+
+p7 = Pessoa('772342346', 'José', 37000)
+print(f"contador: {p7.contador}, CPF: {p7.cpf}, Nome: {p7.nome}, salario: {p7.get_salario()}")
+```
+```bahs
+contador: 1, CPF: 545678925, Nome: Francisco, salario: 31000
+contador: 2, CPF: 672342342, Nome: Antônio, salario: 29000
+contador: 3, CPF: 772342346, Nome: José, salario: 37000
 ```
 
 ### **Herança**  
