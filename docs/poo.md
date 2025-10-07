@@ -132,11 +132,35 @@ contador: 2, CPF: 672342342, Nome: Antônio, salario: 29000
 contador: 3, CPF: 772342346, Nome: José, salario: 37000
 ```
 
+### Lista de pessoas
+
+```python
+lista_pessoas = []
+lista_pessoas = [p5, p6, p7]
+
+for i,p in enumerate(lista_pessoas):
+  print(f"seq: {i}, CPF: {p.cpf}, Nome: {p.nome}, salario: {p.get_salario()}")
+```
+```bash
+seq: 0, CPF: 545678925, Nome: Francisco, salario: 31000
+seq: 1, CPF: 672342342, Nome: Antônio, salario: 29000
+seq: 2, CPF: 772342346, Nome: José, salario: 37000
+```
+
 ### **Herança**  
 ```python
+class Pessoa():
+  def __init__(self, cpf, nome, telefone): 
+    self.cpf = cpf 
+    self.nome = nome 
+    self.telefone = telefone
+  
+  def apresentar(self):
+    print(f"CFP: {self.cpf} Nome: {self.nome} Telefone: {self.telefone}")
+
 class Aluno(Pessoa):  # Herda de Pessoa
-    def __init__(self, nome, idade, matricula):
-        super().__init__(nome, idade)  # Chama construtor da classe pai
+    def __init__(self, cpf, nome, telefone, matricula):
+        super().__init__(cpf, nome, telefone)  # Chama construtor da classe pai
         self.matricula = matricula
 
     def apresentar_aluno(self):
@@ -148,18 +172,28 @@ Usando a classe Aluno:
 
 ```python
 # Criando um objeto da classe Aluno
-aluno1 = Aluno("Carlos Silva", 20, "20231015")
+aluno1 = Aluno("123454321", "Carlos Silva","(86)9876543", "20231015")
 
 # Acessando os atributos do objeto aluno1
 print(f"Nome do aluno: {aluno1.nome}")
-print(f"Idade do aluno: {aluno1.idade}")
+print(f"Telefone do aluno: {aluno1.telefone}")
 print(f"Matrícula do aluno: {aluno1.matricula}")
 
 # Chamando os métodos do objeto aluno1
 aluno1.apresentar()       # Método herdado da classe Pessoa
+print("")
 aluno1.apresentar_aluno() # Método específico da classe Aluno
 ```
 
+```bash
+Nome do aluno: Carlos Silva
+Telefone do aluno: (86)9876543
+Matrícula do aluno: 20231015
+CFP: 123454321 Nome: Carlos Silva Telefone: (86)9876543
+
+CFP: 123454321 Nome: Carlos Silva Telefone: (86)9876543
+Minha matrícula é: 20231015
+```
 ---
 
 ## **4. Caso de Uso: Sistema de Gerenciamento de Pessoas**  
