@@ -11,8 +11,6 @@ O tratamento de exceções é essencial para garantir que um programa continue e
 - **Fornecer feedback claro** ao usuário sobre erros.  
 - **Melhorar a manutenção e depuração** do código.  
 
----
-
 ## **2. O que são Exceções?**  
 Exceções são eventos que interrompem o fluxo normal de um programa quando ocorre um erro.  
 
@@ -30,8 +28,6 @@ Exceções são eventos que interrompem o fluxo normal de um programa quando oco
 | `KeyError` | Chave inexistente em um dicionário. |  
 | `ZeroDivisionError` | Divisão por zero. |  
 | `FileNotFoundError` | Tentativa de abrir um arquivo que não existe. |  
-
----
 
 ## **3. Tratamento de Exceções com `try-except`**  
 ### **Sintaxe Básica**  
@@ -63,8 +59,6 @@ except Exception as e:  # Captura qualquer exceção
     print(f"Ocorreu um erro: {e}")
 ```  
 
----
-
 ## **4. Blocos `else` e `finally`**  
 ### **`else`** → Executado **apenas se nenhuma exceção ocorrer**.  
 ```python
@@ -87,8 +81,6 @@ except FileNotFoundError:
 finally:
     arquivo.close()  # Garante que o arquivo será fechado
 ```  
-
----
 
 ## **5. Lançamento de Exceções (`raise`)**  
 ### **Quando Usar?**  
@@ -129,16 +121,12 @@ except SaldoInsuficienteError as e:
     print(e)  # Saída: "Saldo insuficiente!"
 ```  
 
----
-
 ## **6. Boas Práticas no Tratamento de Exceções**  
 **Seja específico** → Capture exceções específicas, evite `except Exception`.  
 **Mantenha blocos `try` pequenos** → Facilita a leitura e manutenção.  
 **Use `finally` para liberar recursos** → Fechar arquivos, conexões, etc.  
 **Documente exceções** → Use docstrings para explicar possíveis erros.  
 **Não silencie exceções sem motivo** → Pode mascarar bugs.  
-
----
 
 ## **7. Conclusão**  
 - **Tratamento de exceções** torna o código mais **robusto e confiável**.  
